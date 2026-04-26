@@ -21,7 +21,7 @@ public class EmployeeController {
         this.employeeRepository = employeeRepository;
     }
 
-    /** Updates an existing employee; returns 404 if id does not exist. */
+    /** Updates an existing employee by id; returns 404 if id does not exist. */
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Employee> updateEmployee(
             @PathVariable Long id,
