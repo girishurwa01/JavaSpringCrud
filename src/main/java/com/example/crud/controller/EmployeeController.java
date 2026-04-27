@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/** REST API for employees (example CRUD controller). */
+/** REST API for employees (Spring Boot CRUD example). */
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {
