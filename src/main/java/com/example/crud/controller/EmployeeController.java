@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/** REST API for employees (Spring Boot CRUD example). */
+/** REST API for employees (beginner-friendly Spring Boot CRUD example). */
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {
@@ -21,7 +21,7 @@ public class EmployeeController {
         this.employeeRepository = employeeRepository;
     }
 
-    /** Updates an existing employee by id; returns 404 if id does not exist. */
+    /** Updates an existing employee by id and returns 404 if it does not exist. */
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Employee> updateEmployee(
             @PathVariable Long id,
